@@ -89,7 +89,7 @@ videoApp.controller('videoController',['$scope','$window','$interval',function($
     $scope.initPlayer();
 }]);
 
-//Filters are created outside the controllers
+//custom Filters are created outside the controllers
 videoApp.filter('time', function() {
     return function(seconds) {
         var hh = Math.floor(seconds / 3600), mm = Math.floor(seconds / 60) % 60, ss = Math.floor(seconds) % 60;
