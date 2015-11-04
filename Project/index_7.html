@@ -20,6 +20,11 @@
             <div id="bigPlayButton" ng-click="togglePlay()" ng-hide="videoPlaying" class="well"><span class="glyphicon glyphicon-play"></span></div>
             <div id="videoTitle" ng-hide="videoPlaying" >{{titleDisplay}}</div>
         </div>
+        
+         <div id="progressMeterFull">
+            <div id="progressMeter" style="width:{{scrubLeft+7}}px"></div>
+        </div>
+        
         <div id="playerToolBar">
             <a id="playBtn" ng-click="togglePlay()" class="btn btn-default"><span class="glyphicon glyphicon-play"></span></a>
             <a id="muteBtn" ng-click="toggleMute()" class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span></a>
